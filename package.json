@@ -1,0 +1,23 @@
+{
+  "name": "socketio_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon --watch public --watch server server/server.js"
+  },
+  "keywords": [
+    "socketio",
+    "express"
+  ],
+  "author": "Kuroedov Alexander",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

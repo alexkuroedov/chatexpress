@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SIO Chat</title>
+</head>
+<body>
+
+
+<form class="auth" action="chat.html" method="get">
+    <div class="card">
+        <div class="car-content">
+            <h4 class="card-title">IO Chat</h4>
+            <div class="input-field">
+                <input id = "name" type="text" class="validate" name="name" required >
+                <label for="name">Name:</label>
+            </div>
+            <div class="input-field ">
+                <input id = "room" type="text" class="validate" name="room" required >
+                <label for="room">Chat:</label>
+            </div>
+        </div>
+        <div class="card-action">
+            <button class="btn waves-effect waves-light purple darken-4" type="submit" name="action">Run Chat
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </div>
+
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="socket.io/socket.io.js"></script>
+
+</body>
+</html>
