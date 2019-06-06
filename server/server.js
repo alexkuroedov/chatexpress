@@ -3,8 +3,10 @@ const path = require('path')
 const http = require('http')
 const socketIO = require('socket.io')
 const users = require('./users')()
+const config = require('../config/config')
 
-const port = process.env.PORT || 3200
+// const port = process.env.PORT || 3200
+const port = config.port
 const publicPath = path.join(__dirname, '../public')
 
 const app = express()
@@ -14,6 +16,7 @@ const io = socketIO(server)
 const message = (name, text, id) => {
     return {name, text, id}
 }
+
 
 
 app.use(express.static(publicPath))
@@ -63,3 +66,16 @@ io.on('connection', socket => {
 server.listen(port,() => {
     console.log(`Server Up on port ${port}`)
 })
+
+
+//for Heroku not sleep
+const https = require("https");
+setInterval(function() {
+    https.get(config.herokuHttps, (result) => {
+        console.log('get https!')
+    });
+
+    http.get(config.herokuHttp, (result)=> {
+        console.log('get http!')
+    })
+}, 300000); // every 5 minutes (300000)
