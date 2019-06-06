@@ -78,3 +78,10 @@ html, body{
     box-shadow: 0 1px 0 0 #4a148c!important;
   }
   
+  .collection .collection-item.active{
+      background-color: #4a148c;
+  }
+
+  .collection a.collection-item{
+    color: #4a148c;
+}
