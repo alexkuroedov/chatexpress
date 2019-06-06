@@ -1,6 +1,6 @@
 config = {
-    herokuHttps: 'https://limitless-stream-38181.herokuapp.com/ ',
-    herokuHttp: 'http://limitless-stream-38181.herokuapp.com/ ',
+    herokuHttps: 'https://warm-plains-13717.herokuapp.com/ ',
+    herokuHttp: 'http://warm-plains-13717.herokuapp.com/ ',
 }
 
 if (process.env.NODE_ENV === "production") {
