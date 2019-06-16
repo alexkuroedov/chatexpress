@@ -1,22 +1,11 @@
 # Chatexpress
-Main technology used in this application: node.js express, passport, handlebars, mongodb
+This application is a simple chat. To enter you need to enter your nickname and chat name.
+Main technology used in this application: node.js express, socket.io
 
 ## Run application in docker container
-Application run on port 5000
+Application run on port 3200
 ```sh
 $ docker-compose up
 ```
-## Dump mongodb data
-To save the database, run the script mongodb_dump.sh
-```sh
-$ cd data && mongodb_dump.sh
-```
-## Restore mongodb data
-To restore the database, run mongodb_restore.sh
-```sh
-$ cd data && mongodb_restore.sh
-```
-## Redact mongodb data
-Mongo Express is used for easy base editing. It is launched on port 8081
 
 
